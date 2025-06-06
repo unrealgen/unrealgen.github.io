@@ -71,7 +71,7 @@ export default function Hero() {
         </div>
 
         {/* Main Title */}
-        <h1 className="text-5xl md:text-7xl lg:text-8xl font-bold mb-6 bg-gradient-to-r from-white via-blue-200 to-purple-200 bg-clip-text text-transparent">
+        <h1 className="h-full text-5xl md:text-7xl lg:text-8xl font-bold pb-6 bg-gradient-to-r from-white via-blue-200 to-purple-200 bg-clip-text text-transparent">
           UnrealGenPlugin
         </h1>
 
