@@ -11,7 +11,7 @@ const nextConfig = {
   },
 
   output: "export",
-  basePath: "/unrealgen",
+  //basePath: "/unrealgen",
 };
 
 export default nextConfig;
