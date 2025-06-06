@@ -9,6 +9,9 @@ const nextConfig = {
   images: {
     unoptimized: true,
   },
-}
 
-export default nextConfig
+  output: "export",
+  basePath: "/unrealgen",
+};
+
+export default nextConfig;
