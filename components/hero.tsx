@@ -111,7 +111,7 @@ export default function Hero() {
         {/* CTA Button */}
         <div className="flex flex-col items-center gap-6">
           <Button
-            onClick={handleLinkClick}
+            onClick={scrollToSignup}
             size="lg"
             className="bg-gradient-to-r from-purple-600 to-blue-600 hover:from-purple-700 hover:to-blue-700 text-white px-8 py-4 text-lg font-semibold rounded-xl transform hover:scale-105 transition-all duration-300 shadow-2xl"
           >
