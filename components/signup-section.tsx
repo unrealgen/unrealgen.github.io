@@ -6,7 +6,13 @@ import { useState, useCallback } from "react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Card, CardContent } from "@/components/ui/card";
-import { Mail, User, CheckCircle, Sparkles } from "lucide-react";
+import {
+  Mail,
+  User,
+  CheckCircle,
+  Sparkles,
+  ShoppingBasketIcon,
+} from "lucide-react";
 import Script from "next/script";
 
 export default function SignupSection() {
@@ -84,7 +90,7 @@ export default function SignupSection() {
 
       <div className="max-w-4xl mx-auto relative">
         {/* Header */}
-        <div className="text-center mb-16">
+        <div className="flex flex-col justify-center items-center text-center mb-16 ">
           <div className="flex justify-center items-center gap-2 mb-4">
             <Sparkles className="w-6 h-6 text-yellow-400 animate-pulse" />
             <span className="text-sm uppercase tracking-wider text-yellow-400 font-semibold">
@@ -99,6 +105,39 @@ export default function SignupSection() {
             Be among the first developers to experience the power of AI-assisted
             Blueprint creation. Limited early access spots available.
           </p>
+
+          <iframe
+            src="https://itch.io/embed/3667899?border_width=5&amp;bg_color=222222&amp;fg_color=eeeeee&amp;link_color=fabe5b&amp;border_color=363636"
+            width="560"
+            height="175"
+            className="mt-4"
+          >
+            <a href="https://minddrivestudio.itch.io/unrealgenplugin">
+              UnrealGenPlugin by MindDriveStudio
+            </a>
+          </iframe>
+          <Script
+            type="text/javascript"
+            src="https://cdnjs.buymeacoffee.com/1.0.0/button.prod.min.js"
+            data-name="bmc-button"
+            data-slug="minddrive"
+            data-color="#BD5FFF"
+            data-emoji="☕"
+            data-font="Lato"
+            data-text="my buymeacoffee shop"
+            data-outline-color="#000000"
+            data-font-color="#ffffff"
+            data-coffee-color="#FFDD00"
+          ></Script>
+          <div className="mt-4">
+            <a
+              href="https://buymeacoffee.com/minddrive/extras"
+              className="flex items-center justify-center gap-3 w-[560px] h-[175px] bg-[#222222] border-[5px] border-[#363636] text-[#eeeeee] hover:text-[#fabe5b] transition-colors duration-200 rounded-sm text-lg font-medium hover:bg-[#2a2a2a]"
+            >
+              <ShoppingBasketIcon className="w-8 h-8" />
+              BuyMeCoffee Shop
+            </a>
+          </div>
         </div>
 
         {/* Signup Form */}
