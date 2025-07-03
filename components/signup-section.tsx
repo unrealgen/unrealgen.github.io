@@ -103,10 +103,10 @@ export default function SignupSection() {
           </h2>
           <p className="text-xl text-gray-300 max-w-2xl mx-auto">
             Be among the first developers to experience the power of AI-assisted
-            Blueprint creation. Limited early access spots available.
+            Blueprint creation.
           </p>
 
-          <iframe
+          {/* <iframe
             src="https://itch.io/embed/3667899?border_width=5&amp;bg_color=222222&amp;fg_color=eeeeee&amp;link_color=fabe5b&amp;border_color=363636"
             width="560"
             height="175"
@@ -115,7 +115,7 @@ export default function SignupSection() {
             <a href="https://minddrivestudio.itch.io/unrealgenplugin">
               UnrealGenPlugin by MindDriveStudio
             </a>
-          </iframe>
+          </iframe> */}
           <Script
             type="text/javascript"
             src="https://cdnjs.buymeacoffee.com/1.0.0/button.prod.min.js"
@@ -131,11 +131,11 @@ export default function SignupSection() {
           ></Script>
           <div className="mt-4">
             <a
-              href="https://buymeacoffee.com/minddrive/extras"
-              className="flex items-center justify-center gap-3 w-[560px] h-[175px] bg-[#222222] border-[5px] border-[#363636] text-[#eeeeee] hover:text-[#fabe5b] transition-colors duration-200 rounded-sm text-lg font-medium hover:bg-[#2a2a2a]"
+              href="https://fab.com/s/8b32b1eee2c3"
+              className="flex items-center justify-center gap-3 w-[560px] h-[175px] bg-[#222222] border-[5px] border-[#363636] text-[#eeeeee] hover:text-[#5bb8fa] transition-colors duration-200 rounded-sm text-lg font-medium hover:bg-[#2a2a2a]"
             >
               <ShoppingBasketIcon className="w-8 h-8" />
-              BuyMeCoffee Shop
+              Available at the Fab Marketplace
             </a>
           </div>
         </div>
