@@ -132,7 +132,7 @@ export default function SignupSection() {
           <div className="mt-4">
             <a
               href="https://fab.com/s/8b32b1eee2c3"
-              className="flex items-center justify-center gap-3 w-[560px] h-[175px] bg-[#222222] border-[5px] border-[#363636] text-[#eeeeee] hover:text-[#5bb8fa] transition-colors duration-200 rounded-sm text-lg font-medium hover:bg-[#2a2a2a]"
+              className="flex items-center justify-center gap-3 w-[560px] h-[175px] bg-[#222222] border-[5px] border-[#363636] text-[#ffd900] hover:text-[#5bb8fa] transition-colors duration-200 rounded-sm text-lg font-medium hover:bg-[#2a2a2a]"
             >
               <ShoppingBasketIcon className="w-8 h-8" />
               Available at the Fab Marketplace
@@ -141,7 +141,7 @@ export default function SignupSection() {
         </div>
 
         {/* Signup Form */}
-        <Card className="bg-gradient-to-br from-white/10 to-white/5 backdrop-blur-xl border-white/20 shadow-2xl">
+        {/* <Card className="bg-gradient-to-br from-white/10 to-white/5 backdrop-blur-xl border-white/20 shadow-2xl">
           <CardContent className="p-8 md:p-12">
             <Script
               async
@@ -160,7 +160,7 @@ export default function SignupSection() {
               }}
             ></iframe>
           </CardContent>
-        </Card>
+        </Card> */}
       </div>
     </section>
   );
