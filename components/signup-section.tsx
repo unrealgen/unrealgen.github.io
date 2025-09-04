@@ -91,13 +91,6 @@ export default function SignupSection() {
       <div className="max-w-4xl mx-auto relative">
         {/* Header */}
         <div className="flex flex-col justify-center items-center text-center mb-16 ">
-          <div className="flex justify-center items-center gap-2 mb-4">
-            <Sparkles className="w-6 h-6 text-yellow-400 animate-pulse" />
-            <span className="text-sm uppercase tracking-wider text-yellow-400 font-semibold">
-              Early Access
-            </span>
-            <Sparkles className="w-6 h-6 text-yellow-400 animate-pulse" />
-          </div>
           <h2 className="text-4xl md:text-6xl font-bold mb-6 bg-gradient-to-r from-white via-blue-200 to-purple-200 bg-clip-text text-transparent">
             Join the Revolution
           </h2>
@@ -105,17 +98,6 @@ export default function SignupSection() {
             Be among the first developers to experience the power of AI-assisted
             Blueprint creation.
           </p>
-
-          {/* <iframe
-            src="https://itch.io/embed/3667899?border_width=5&amp;bg_color=222222&amp;fg_color=eeeeee&amp;link_color=fabe5b&amp;border_color=363636"
-            width="560"
-            height="175"
-            className="mt-4"
-          >
-            <a href="https://minddrivestudio.itch.io/unrealgenplugin">
-              UnrealGenPlugin by MindDriveStudio
-            </a>
-          </iframe> */}
           <Script
             type="text/javascript"
             src="https://cdnjs.buymeacoffee.com/1.0.0/button.prod.min.js"
@@ -138,6 +120,12 @@ export default function SignupSection() {
               Available at the Fab Marketplace
             </a>
           </div>
+          <a
+            href="https://discord.gg/cpqkGHfzAa"
+            className="text-2xl font-bold my-4 text-white group-hover:text-transparent group-hover:bg-gradient-to-r group-hover:bg-clip-text group-hover:from-white group-hover:to-gray-300 transition-all duration-300 flex items-center justify-center gap-3 w-[560px] h-[175px] bg-[#5865F2] border-[5px] border-[#4752C4] text-white hover:text-[#00e1ff] transition-colors duration-200 rounded-sm  hover:bg-[#4752C4]"
+          >
+            Join us on DISCORD
+          </a>
         </div>
 
         {/* Signup Form */}

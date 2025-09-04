@@ -1,7 +1,14 @@
-"use client"
+"use client";
 
-import { useEffect, useRef, useCallback } from "react"
-import { MessageSquare, Lightbulb, Wrench, Rocket, Shield, Clock } from "lucide-react"
+import { useEffect, useRef, useCallback } from "react";
+import {
+  MessageSquare,
+  Lightbulb,
+  Wrench,
+  Rocket,
+  Shield,
+  Clock,
+} from "lucide-react";
 
 const features = [
   {
@@ -28,46 +35,52 @@ const features = [
   {
     icon: Rocket,
     title: "Workflow Acceleration",
-    description: "Reduce development time by 70% with automated Blueprint creation and intelligent code completion.",
+    description:
+      "Reduce development time by 70% with automated Blueprint creation and intelligent code completion.",
     color: "from-orange-500 to-red-500",
   },
   {
     icon: Shield,
     title: "Best Practice Enforcement",
-    description: "Ensure your Blueprints follow Unreal Engine conventions with built-in validation and suggestions.",
+    description:
+      "Ensure your Blueprints follow Unreal Engine conventions with built-in validation and suggestions.",
     color: "from-indigo-500 to-purple-500",
   },
   {
     icon: Clock,
     title: "24/7 AI Assistant",
-    description: "Never get stuck again with round-the-clock AI support for all your Blueprint development needs.",
+    description:
+      "Never get stuck again with round-the-clock AI support for all your Blueprint development needs.",
     color: "from-teal-500 to-blue-500",
   },
-]
+];
 
 export default function Features() {
-  const sectionRef = useRef<HTMLElement>(null)
+  const sectionRef = useRef<HTMLElement>(null);
 
-  const handleIntersection = useCallback((entries: IntersectionObserverEntry[]) => {
-    entries.forEach((entry) => {
-      if (entry.isIntersecting) {
-        entry.target.classList.add("opacity-100", "translate-y-0")
-        entry.target.classList.remove("opacity-0", "translate-y-8")
-      }
-    })
-  }, [])
+  const handleIntersection = useCallback(
+    (entries: IntersectionObserverEntry[]) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add("opacity-100", "translate-y-0");
+          entry.target.classList.remove("opacity-0", "translate-y-8");
+        }
+      });
+    },
+    []
+  );
 
   useEffect(() => {
     const observer = new IntersectionObserver(handleIntersection, {
       threshold: 0.1,
       rootMargin: "50px",
-    })
+    });
 
-    const cards = sectionRef.current?.querySelectorAll(".feature-card")
-    cards?.forEach((card) => observer.observe(card))
+    const cards = sectionRef.current?.querySelectorAll(".feature-card");
+    cards?.forEach((card) => observer.observe(card));
 
-    return () => observer.disconnect()
-  }, [handleIntersection])
+    return () => observer.disconnect();
+  }, [handleIntersection]);
 
   return (
     <section ref={sectionRef} className="py-24 px-4 relative">
@@ -78,7 +91,8 @@ export default function Features() {
             Revolutionize Your Workflow
           </h2>
           <p className="text-xl text-gray-400 max-w-3xl mx-auto">
-            Experience the next generation of Blueprint development with cutting-edge AI technology
+            Experience the next generation of Blueprint development with
+            cutting-edge AI technology
           </p>
         </div>
 
@@ -107,12 +121,14 @@ export default function Features() {
                 <h3 className="text-2xl font-bold mb-4 text-white group-hover:text-transparent group-hover:bg-gradient-to-r group-hover:bg-clip-text group-hover:from-white group-hover:to-gray-300 transition-all duration-300">
                   {feature.title}
                 </h3>
-                <p className="text-gray-400 leading-relaxed">{feature.description}</p>
+                <p className="text-gray-400 leading-relaxed">
+                  {feature.description}
+                </p>
               </div>
             </div>
           ))}
         </div>
       </div>
     </section>
-  )
+  );
 }
